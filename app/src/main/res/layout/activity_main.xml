@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.businesscard.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dogparty"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/companylogo"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/company_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dog Tales"
+        android:fontFamily="casual"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#009900"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#0d0d0d"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:text="957 Frankilin Ave. Brooklyn, NY 11225" />
+
+    <TextView
+        android:id="@+id/email_address_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/address_text_view"
+        android:textColor="#0d0d0d"
+        android:paddingRight="10dp"
+        android:text="dogtales@gmail.com" />
+
+    <TextView
+        android:id="@+id/website_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/email_address_text_view"
+        android:textColor="#0d0d0d"
+        android:text="www.dogtales.com"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/phone_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/website_text_view"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:textColor="#0d0d0d"
+        android:text="(718) 886-5432" />
+
+    <TextView
+        android:id="@+id/company_description_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-The best place to socialize your puppy or dog through sponsored or supervised play groups.-"
+        android:textColor="#0d0d0d"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:paddingRight="10dp"
+        android:paddingLeft="100dp"
+        android:layout_below="@id/company_name_text_view" />
+
+    <ImageView
+        android:id="@+id/social_media_logo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/socialmedialogo"
+        android:scaleType="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#0d0d0d"
+        android:layout_above="@id/social_media_logo_image_view"
+        android:paddingLeft="10dp"
+        android:text="Follow Us:" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phoneicon"
+        android:layout_toLeftOf="@id/phone_number_text_view"
+        android:layout_above="@id/website_text_view"
+        android:paddingRight="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/webicon"
+        android:layout_toLeftOf="@id/website_text_view"
+        android:layout_above="@id/email_address_text_view"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emailicon"
+        android:layout_toLeftOf="@id/email_address_text_view"
+        android:layout_above="@id/address_text_view"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"/>
+
+</RelativeLayout>
